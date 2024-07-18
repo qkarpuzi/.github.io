@@ -1,0 +1,494 @@
+/* General styles */
+body {
+    background-color: #ffffff; /* Set background to white */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the main content */
+}
+
+/* Navbar styles */
+nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    padding: 1rem;
+}
+
+.container-fluid {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; /* Space out the brand and navbar items */
+}
+
+.navbar-brand {
+    color: #ffffff; /* White text for brand name */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    list-style: none; /* Remove default list styling */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White text for nav links */
+    margin-left: 1rem; /* Space between nav items */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.cart-icon {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+}
+
+/* Section styles */
+section {
+    margin-bottom: 80px; /* Increased spacing between sections */
+    background-color: #ffffff; /* Set background to white */
+}
+
+.intro {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 40px; /* Add bottom margin for spacing */
+}
+
+.intro h1 {
+    font-size: 4rem; /* Increase heading size */
+    color: #333; /* Lighter black color */
+}
+
+.intro p {
+    font-size: 2.2rem; /* Increase paragraph size */
+    margin: 10px 0; /* Add vertical margin for spacing */
+}
+
+.intro p:not(:first-of-type)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0; /* Add space between paragraph and underline */
+}
+
+.intro-images {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: center; /* Center images horizontally */
+    gap: 100px; /* Space between images */
+    flex-wrap: nowrap; /* Prevent wrapping, ensure images stay side by side */
+}
+
+.intro-images img {
+    width: 400px; /* Set a smaller fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for better visibility */
+}
+
+.intro-images img:first-child,
+.intro-images img:nth-child(2) {
+    width: 600px; /* Increase the size of the first two images */
+    height: auto; /* Maintain aspect ratio */
+}
+.products {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-size: 70px; /* Adjust font size */
+    text-align: left; /* Align to the left */
+}
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    width: calc(25% - 10px); /* 25% width for 4 items per row */
+    margin-bottom: 20px; /* Adjust spacing between rows */
+    box-sizing: border-box;
+}
+
+.product-item img {
+    width: 100%; /* Ensure images take up full width of container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensures images maintain their aspect ratio and fill the container */
+}
+
+.product-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-details h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 14px; /* Adjust font size */
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 12px; /* Adjust font size */
+    color: #666; /* Adjust color */
+}
+
+
+
+
+
+
+
+.price-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.product-images img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+/* Expertise section styling */
+.expertise {
+    padding: 2rem;
+    background-color: #ffffff; /* Set background to white */
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.large-text {
+    text-align: left;
+}
+
+.large-text h1 {
+    font-size: 3rem; /* Larger font size for the heading */
+}
+
+.underline {
+    font-size: 2rem; /* Make the main text much bigger */
+    border-bottom: 3px solid #333; /* Larger underline */
+    padding-bottom: 0.75rem; /* Space between text and underline */
+    margin-bottom: 2rem; /* Space between underline and right text */
+}
+
+.text-right {
+    align-self: flex-end; /* Align to the right */
+    text-align: right; /* Align text to the right */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+.text-right p {
+    font-size: 1rem; /* Smaller font size for the smaller text */
+    margin-bottom: 0.5rem; /* Space between the small text and the button */
+}
+
+.text-right button {
+    padding: 0.75rem 1.5rem; /* Slightly larger button */
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.text-right button:hover {
+    background-color: #555; /* Button hover effect */
+}
+
+.expertise .button-container {
+    align-self: flex-end; /* Align button container to the right */
+    margin-top: 20px; /* Add space between paragraph and button */
+}
+
+.expertise button {
+    background-color: #333; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 1rem; /* Font size for button text */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.expertise button:hover {
+    background-color: #555; /* Slightly lighter color on hover */
+}
+
+/* General Styling for Feedback Section */
+#feedback {
+    background-color: #f7f7f7; /* Light grey background for contrast */
+    padding: 40px 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.feedback-container {
+    max-width: 800px; /* Restrict the width for better readability */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+}
+
+.feedback-content {
+    margin-bottom: 20px; /* Space below the content */
+}
+
+.feedback-title {
+    font-size: 2.5em; /* Match size to h1 in "INNOVATIVE SOLUTIONS" */
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 10px; /* Space below the title */
+    line-height: 1.2; /* Line height for better readability */
+}
+
+.feedback-description {
+    font-size: 1.2em; /* Match size to paragraphs in "INNOVATIVE SOLUTIONS" */
+    color: #666; /* Medium grey color */
+    margin-bottom: 30px; /* Space below the description */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+.feedback-toggle {
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Smaller padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1em; /* Standard text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feedback-toggle:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Modal Styling */
+.feedback-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed positioning */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.feedback-modal-content {
+    background-color: #fff; /* White background for the modal */
+    margin: 15% auto; /* Center the modal */
+    padding: 20px; /* Padding inside the modal */
+    border-radius: 10px; /* Rounded corners for the modal */
+    width: 80%; /* Modal width */
+    max-width: 600px; /* Maximum width */
+    position: relative; /* Position relative for close button */
+}
+
+.feedback-modal-close {
+    position: absolute; /* Position the close button */
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em; /* Larger font size for close button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.feedback-form label {
+    font-size: 1em; /* Standard size for labels */
+    margin-bottom: 5px; /* Space below each label */
+    color: #555; /* Slightly darker grey for labels */
+}
+
+.feedback-form input, .feedback-form textarea {
+    font-size: 1em; /* Consistent text size for inputs and textarea */
+    padding: 10px; /* Padding inside form fields */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px; /* Rounded corners for input fields */
+    margin-bottom: 15px; /* Space between fields */
+    width: 100%; /* Full width for form fields */
+}
+
+.feedback-form textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+.feedback-submit {
+    background-color: #007bff; /* Primary button color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 15px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 1em; /* Consistent text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feedback-submit:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+
+/* Testimonials section styling */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between testimonials */
+    margin: 20px 0; /* Space around the section */
+    background-color: #ffffff; /* White background for the section */
+    padding: 20px; /* Optional: add padding around the section */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column; /* Stack heading and text vertically */
+    gap: 15px; /* Space between heading and text */
+}
+
+.testimonial-heading {
+    font-size: 1.25rem; /* Smaller font size for the heading */
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+    text-align: left; /* Left align the heading */
+}
+
+.testimonial-text {
+    font-size: 1.75rem; /* Smaller font size for headers */
+    font-weight: bold;
+    color: #333; /* Dark gray text color */
+    max-width: 600px; /* Limit width for readability */
+    line-height: 1.4; /* Improve line spacing for readability */
+    text-align: left; /* Left align the text */
+}
+
+/* Position testimonials alternately */
+.testimonial-container.left {
+    align-items: flex-start; /* Align heading and text to the start (left) */
+    text-align: left; /* Ensure text alignment is left */
+}
+
+.testimonial-container.right {
+    align-items: flex-start; /* Align heading and text to the start (right) */
+    text-align: right; /* Align text to the right */
+}
+
+.testimonial-container.middle {
+    align-items: flex-end; /* Align items to the end (right) */
+    text-align: right; /* Ensure text aligns to the right */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .testimonials {
+        flex-direction: column; /* Stack testimonials vertically on small screens */
+    }
+    
+    .testimonial-container {
+        flex-direction: column; /* Stack heading and text vertically on small screens */
+        align-items: flex-start; /* Align to the start for smaller screens */
+        text-align: left; /* Ensure text aligns to the left for better readability */
+    }
+
+    .testimonial-container.middle {
+        align-items: flex-start; /* Align middle container to the start on small screens */
+        text-align: left; /* Align text to the left on small screens */
+    }
+}
+
+/* Innovative Solutions Section Styles */
+.innovative-solutions {
+    background-color: #ffffff; /* Set background to white */
+}
+
+.innovative-solutions h1 {
+    font-size: 4rem; /* Increase heading size */
+    color: #333; /* Lighter black color */
+    margin-bottom: 30px; /* Space between the heading and content */
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffffff; /* White color */
+    border-top: 3px solid #333; /* Add top border */
+    padding: 40px; /* Increased padding for a larger footer */
+    margin-top: 40px; /* Increased margin on top */
+    font-size: 1.6rem; /* Reduced font size */
+    display: flex;
+    justify-content: space-between; /* Space out left and right text */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+}
+
+/* Cart styles */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially hide cart */
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart h2 {
+    text-align: center;
+    background-color: #333; /* Header background color */
+    color: #ffffff; /* Header text color */
+    padding: 10px; /* Padding for the header */
+}
