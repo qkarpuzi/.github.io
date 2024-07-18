@@ -458,7 +458,6 @@ section {
 /* Footer styles */
 footer {
     background-color: #e6e5e5; /* White color */
-    /* border-top: 3px solid #333;  */
     padding: 40px; /* Increased padding for a larger footer */
     margin-top: 40px; /* Increased margin on top */
     font-size: 1.6rem; /* Reduced font size */
