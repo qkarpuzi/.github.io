@@ -1,9 +1,11 @@
 /* General styles */
 body {
-    background-color: #ffffff; /* Set background to white */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/204/194/non_2x/technology-background-design-in-white-color-free-vector.jpg");
+    /* background-color: #ffffff;  */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    backdrop-filter: blur(100px);
 }
 
 main {
@@ -12,12 +14,13 @@ main {
     margin: 0 auto; /* Center the main content */
 }
 
-/* Navbar styles */
 nav {
     display: flex;
     align-items: center; /* Center items vertically */
-    background-color: #333;
     padding: 1rem;
+    position: sticky; top:0;
+    backdrop-filter: blur(55px);
+    transition: backdrop-filter 0.3s; /* Smooth transition */
 }
 
 .container-fluid {
@@ -490,4 +493,8 @@ footer {
     background-color: #333; /* Header background color */
     color: #ffffff; /* Header text color */
     padding: 10px; /* Padding for the header */
+}
+nav{
+    position: sticky; top:0;
+    backdrop-filter: blur(45px);
 }
